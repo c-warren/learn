@@ -64,4 +64,9 @@ func WithIncrement(inc int) CounterOpt {
 }
 ```
 
-
+This can then be used from another package:
+```
+counter := NewCounter(
+    WithIncrement(10),
+);
+```
