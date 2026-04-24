@@ -28,14 +28,16 @@ func NewCounter() counter {
 ```
 
 When you want to customize the behaviour of that instance you have multiple options:
-    - provide arguments to the New function
-    - provide a struct of arguments to the New function
-    - use the options pattern
+
+- provide arguments to the New function
+- provide a struct of arguments to the New function
+- use the options pattern
 
 The options pattern is a useful when:
-    - you want to ensure backwards compatibility for the constructor signature
-    - you have a large number of parameters, most of which don't need to be specified regularly 
-    - have a lot of documentation to write for options and don't want a heavily cluttered parameterized struct or constructor documentation
+
+- you want to ensure backwards compatibility for the constructor signature
+- you have a large number of parameters, most of which don't need to be specified regularly 
+- have a lot of documentation to write for options and don't want a heavily cluttered parameterized struct or constructor documentation
 
 ## The opts pattern
 
